@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -14,6 +15,7 @@
     <title>MARMARA</title>
 </head>
 <body>
+    
     <header>
         <nav>
             <div class="topnav" id="myTopnav">
@@ -28,33 +30,19 @@
             </div>
         </nav>
     </header>
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis id minima magni totam corporis ratione eaque repudiandae suscipit quibusdam delectus officia consectetur nisi voluptatum nesciunt consequatur, illo exercitationem in ea fuga expedita, ullam neque? Quasi similique reiciendis explicabo esse expedita aliquam tempore reprehenderit consequatuminima minus inventore beatae nulla eum rem aspernatur illum culpa delectus error perspiciatis? Cum fugiat quo maiores provident placeat consequuntur odit excepturi itaque veritatis iusto, amet explicabo cumque aliquid sed commodi rem inventore velit officia? Quas odio expedita sit. Quasi, quaerat ad?</p>
-    </div>
-    <div>
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugit reprehenderit aliquam dicta ea voluptatum 
-            quasi quisquam tenetur dolorum illum, nisi voluptates fugiat molestias quos natus totam officia deleniti nostrum ab 
-            dolores nulla, consectetur corrupti similique. Perferendis illo fuga nemo totam. Maiores itaque hic offiae impedit 
-            unde rerum modi, corrupti voluptate assumen Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ad expli
-            cabo, iure voluptatum delectus reprehenderit dolore distinctio totam at, tempore nisi? Maxime praesentium possimus d
-            ignissimos esse ipsum sed dicta sunt quam harum voluptates saepe enim consequatur, quia iure numquam aliquam ipsam. M
-            olestiae officia illum ad dolores, soluta, voluptatem doloribus esse veritatis omnis voluptatibus animi quaerat culpa 
-            acilis accusantium est. Ipsa quae explicabo optio molestiae tempore, in veniam. Repellat sunt perspiciatis placeat a
-            ccusantium ipsam dolor ratione eos doloremque vel ut repudiandae odit modi non ea, id velit optio! Voluptatem offici
-            is ipsum commodi sequi aliquam odio doloribus voluptatibus, et natus delectus alias repellat, porro ex quia voluptate
-            vero corrupti rerum quis aspernatur, provident velit. Assumenda eligendi incidunt deleniti omnis autem odio ducimus
-            rem porro, nam, dolorem molestias ullam aliquam nisi voluptate iste unde corrupti beatae illum vitae repudiandae q
-            uia eveniet. Corrupti consectetur, quaerat explicabo sapiente rerum possimus provident perspiciatis facere in delen
-            iti, excepturi qui. Impedit molestias, alias eum culpa veniam laborum error quos consequatur non commodi qui! Simil
-            ique iste quidem error quos sapiente? Quaerat deleniti velit ea facilis voluptate quas quam voluptates illo, fugiat,
-            sa, quae autem molestias? Placeat sed repellendus soluta minima eligendi, ad maiores omnis aperiam, perferendis corru
-            pti iusto eum vel. Eveniet unde, doloremque nisi labore nemo quo eum praesentium expedita fuga temporibus. Eius itaqu
-            e minima sequi! Assumenda ea quos doloribus veritatis soluta commodi, aut in sint, doloremque reprehenderit excepturi
-            delectus nisi aperiam reiciendis rem quaerat inventore aspernatur corporis volu
-            ptatem adipisci alias nulla atque. Assumenda cupiditate minima accusantium? Nesciunt, pariatur!
-        </p>
-    </div>
+    <section>
+        <div class="fond-menu">
+            <h1 class="decouvrir">DÉCOUVRIR</h1>
+            <h2>LE MENU !</h2>
+            <p>
+                Le restaurant Marmara vous propose de la nourriture de qualiter locale. <br>
+                Du pain moelleux, avec de la viande fraîchement griller.
+            </p>
+            <div class="row">
+                
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div class="row">
@@ -63,15 +51,25 @@
             </div>
             <div class="col-12 col-md-6 complete">
                 <h1>Formulaire de contact</h1>
-                <form id="contact_form" action="traitformulaire.php" method="POST" enctype="multipart/form-data">
+                <form id="contact_form" action="formulaire.php" method="POST" enctype="multipart/form-data">
                     <div class="row">
                     <label class="required" for="name">Votre nom de famille :</label><br/>
                     <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
                     <span id="name_validation" class="error_message"></span>
                     </div>
                     <div class="row">
+                    <label class="required" for="email">Votre prénom :</label><br/>
+                    <input id="firstname" class="input" name="firstname" type="text" value="" size="30" /><br />
+                    <span id="email_validation" class="error_message"></span>
+                    </div>
+                    <div class="row">
                     <label class="required" for="email">Votre e-mail :</label><br/>
-                    <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+                    <input id="email" class="input" name="email" type="email" value="" size="30" /><br />
+                    <span id="email_validation" class="error_message"></span>
+                    </div>
+                    <div class="row">
+                    <label class="required" for="email">Votre numéro de téléphone :</label><br/>
+                    <input id="telephone" class="input" name="telephone" type="tel" value="" maxlength="10" pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$" required /><br />
                     <span id="email_validation" class="error_message"></span>
                     </div>
                     <div class="row">
