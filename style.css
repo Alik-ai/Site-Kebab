@@ -1,5 +1,5 @@
 body {
-    padding: 0;
+  padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
@@ -53,14 +53,56 @@ body {
   }
 }
 
+/*Menu*/
 
-/*Footer*/
-
-h1{
-  text-align: center;
-  color: white;
+.fond-menu{
+  background-color: #7e63631a;
+  padding: 40px;
 }
 
+.decouvrir{
+  color: red;
+  font-weight: bold;
+}
+
+.image-menu1{
+  display: flex;
+  justify-content: space-around;
+}
+
+.image-menu1{
+  height: 170px;
+  width: 100%;
+  object-fit: cover;     /*Sa zoom sur l'image*/
+  margin-top: 10px;
+}
+
+.afficher{
+  margin-top: 35px;
+  text-align: center;
+}
+
+.afficher a{
+  text-decoration: none;
+  color: #961111;
+  padding: 10px;
+  border: #961111 solid 2px;
+}
+
+/* HR */
+
+#separe{
+  width: 60%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+/*Footer*/
 #submit_button{
   float: right;
   padding: 10px;
@@ -70,6 +112,7 @@ h1{
 .complete{
   padding: 30px; /* haut , droite, bas, gauche*/
   background-color: #961111;
+  color: white;
 }
 
 .nuit{
