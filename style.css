@@ -91,15 +91,83 @@ body {
 
 /* HR */
 
-#separe{
+.separe{
   width: 60%;
   margin: auto;
   margin-top: 20px;
+  margin-bottom: 25px;
 }
 
+/*Horaire et Adresse*/
 
+.horaire{
+  background-color: #961111;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  padding: 15px;
+  box-shadow: -40px -30px #7e63631a;
+}
 
+.hr1 {
+  /* centre verticalement les enfants entre eux */
+  align-items: center;
+  color: white;
+  
 
+  /* active flexbox */
+  display: flex;
+
+  /* garde le texte centré s’il passe sur plusieurs lignes ou si flexbox n’est pas supporté */
+  text-align: center;
+}
+
+.hr1::before,
+.hr1::after {
+  /* la couleur est volontairement absente ; ainsi elle sera celle du texte */
+  border-top: .0625em solid;
+
+  /* nécessaire pour afficher les pseudo-éléments */
+  content: "";
+
+  /* partage le reste de la largeur disponible */
+  flex: 1;
+
+  /* espace les traits du texte */
+  margin: 0 .5em;
+}
+
+.horaire-lundi{
+  text-align: center;
+  color: white;
+}
+
+.horaire-mardi{
+  text-align: center;
+  color: white;
+}
+
+.adresse{
+  text-align: center;
+}
+
+/*Etoile Chef*/
+
+.etoile{
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+h3{
+  padding-top: 5px;
+}
+
+.btn{
+  border: #961111 solid 2px;
+  padding: 10px;
+  text-decoration: none;
+  color: #961111;
+}
 
 
 /*Footer*/
