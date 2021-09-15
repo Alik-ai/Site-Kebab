@@ -72,18 +72,18 @@
         </div>
     </section>
     <hr class="separe">
-    <section class="container">
+    <section class="container" >
         <div class="row horaire">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6" id="horaire">
                 <h2 class="hr1">Horaire</h2>
                 <p class="horaire-lundi">
                     LUNDI <br> Fermé
                 </p>
-                <p class="horaire-mardi">
+                <p class="horaire-mardi" >
                     MARDI A DIMANCHE <br> 11h00 à 14h30 <br> 17h30 à 23h00
                 </p>
             </div>
-            <div class="col-12 col-md-6 adresse">
+            <div class="col-12 col-md-6 adresse" >
                 <h2 class="hr1">Adresse</h2>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d617.5468962697756!2d5.600717166238372!3d45.97741496121008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b5df35bc7c48b%3A0xd11eb077433eef49!2sRestaurant%20Marmara%20Kebab!5e0!3m2!1sfr!2sfr!4v1631538901081!5m2!1sfr!2sfr" class="maps" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
@@ -103,7 +103,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-12 col-md-4 etoile">
+            <div class="col-12 col-md-4 etoile" id="chef">
                 <img class="etoile" src="./image-chef/2eme chef.png" alt="">
                 <h3>Chef</h3>
                 <div>
@@ -132,17 +132,24 @@
     <hr class="separe">
     <footer>
         <div class="row">
-            <div class="col-12 col-md-6">
-               <h3>NOUS CONTACTER</h3>
-               <P>E-mail : exemple.contact@gmail.com</P> <br>
-               <p>Numéro de téléphone : 0605040308</p> <br>
-               <p>Adresse : 61 Rue de la République, 01110 Plateau d'Hauteville</p>
-               <div>
-                   <img src="" alt="">
+            <div class="col-12 col-md-6 foote">
+                <div class="double-foot">
+                    <h3 class="foot">NOUS CONTACTER</h3>
+                    <P class="foot">
+                        E-mail : exemple.contact@gmail.com <br> <br>
+                        Numéro de téléphone : 0605040308 <br> <br>
+                        Adresse : 61 Rue de la République, <br> 01110 Plateau d'Hauteville</p>
+                    <div class="logo2">
+                        <img class="logo" src="./Logo/facebook-2429746_640.png" alt="">
+                        <img class="logo" src="./Logo/instagram-1675670_640.png" alt="">
+                        <img class="logo" src="./Logo/pinterest-2433266_1280.png" alt="">
+                        <img class="logo" src="./Logo/tweeter2.png" alt="">
+                    </div>
+                    <p id="copy">No COPYRIGHT it's compagnie the Alik</p>
                </div>
             </div>
             <div class="col-12 col-md-6 complete">
-                <h2>Formulaire de contact</h2>
+                <h3>Formulaire de contact</h3>
                 <form id="contact_form" action="formulaire.php" method="POST" enctype="multipart/form-data">
                     <div class="row">
                     <label class="required" for="name">Votre nom de famille :</label><br/>
@@ -164,7 +171,7 @@
                     <input id="telephone" class="input" name="telephone" type="tel" value="" maxlength="10" pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$" required /><br />
                     <span id="email_validation" class="error_message"></span>
                     </div>
-                    <div class="row">
+                    <div class="row" id="cont">
                     <label class="required" for="message">Votre message :</label><br/>
                     <textarea id="message" class="input" name="message" rows="7"  cols="30"></textarea><br />
                     <span id="message_validation" class="error_message"></span>
@@ -172,7 +179,7 @@
                     <input id="submit_button" type="submit" value="Envoyer" />
                     
                 </form>
-            </div>
+            </div >
         </div>
     </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>  

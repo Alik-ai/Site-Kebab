@@ -169,6 +169,35 @@ h3{
   color: #961111;
 }
 
+/*Logo*/
+
+.foote{
+  background-color: #961111;
+  color: white;
+}
+
+.foot{
+  text-align: center;
+}
+
+.double-foot{
+  margin-top: 50px;
+}
+
+.logo{
+  width: 50px;
+}
+
+.logo2{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+#copy{
+  text-align: center;
+  margin-top: 80px;
+}
 
 /*Footer*/
 #submit_button{
