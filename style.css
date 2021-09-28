@@ -5,6 +5,17 @@ body {
 }
 
 /*Bar Navigation*/
+#home{
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.baisser{
+  margin-top: 80px;
+}
+
 .topnav {
   overflow: hidden;
   background-color: #961111;
@@ -58,6 +69,8 @@ body {
 .fond-menu{
   background-color: #7e63631a;
   padding: 40px;
+  display: flex;
+  justify-content: center;
 }
 
 .decouvrir{
@@ -77,17 +90,85 @@ body {
   margin-top: 10px;
 }
 
+
+/* BOUTON AFFICHER */
+
 .afficher{
-  margin-top: 35px;
-  text-align: center;
+  color: #961111;
+  text-decoration: none;
 }
 
-.afficher a{
-  text-decoration: none;
-  color: #961111;
-  padding: 10px;
-  border: #961111 solid 2px;
+.afficher:hover{
+  color: rgb(189, 29, 29);
 }
+
+.button {
+  
+  margin-top: 40px;
+  width: 200px;
+  --offset: 10px;
+  --border-size: 2px;
+  display: block;
+  position: relative;
+  padding: 1.5em 3em;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  background: transparent;
+  color: #961111;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold ;
+  border-radius: 0;
+  box-shadow: inset 0 0 0 var(--border-size) currentcolor;
+}
+
+.button__horizontal, .button__vertical {
+  position: absolute;
+  top: var(--horizontal-offset, 0);
+  right: var(--vertical-offset, 0);
+  bottom: var(--horizontal-offset, 0);
+  left: var(--vertical-offset, 0);
+  transition: transform 0.8s ease;
+
+}
+.button__horizontal::before, .button__vertical::before {
+  content: "";
+  position: absolute;
+  border: inherit;
+}
+.button__horizontal {
+  --vertical-offset: calc(var(--offset) * -1);
+  border-top: var(--border-size) solid currentcolor;
+  border-bottom: var(--border-size) solid currentcolor;
+}
+.button__horizontal::before {
+  top: calc(var(--vertical-offset) - var(--border-size));
+  bottom: calc(var(--vertical-offset) - var(--border-size));
+  left: calc(var(--vertical-offset) * -1);
+  right: calc(var(--vertical-offset) * -1);
+}
+.button:hover .button__horizontal {
+  transform: scaleX(0);
+}
+.button__vertical {
+  --horizontal-offset: calc(var(--offset) * -1);
+  border-left: var(--border-size) solid currentcolor;
+  border-right: var(--border-size) solid currentcolor;
+}
+.button__vertical::before {
+  top: calc(var(--horizontal-offset) * -1);
+  bottom: calc(var(--horizontal-offset) * -1);
+  left: calc(var(--horizontal-offset) - var(--border-size));
+  right: calc(var(--horizontal-offset) - var(--border-size));
+}
+.button:hover .button__vertical {
+  transform: scaleY(0);
+}
+
 
 /* HR */
 
@@ -152,6 +233,71 @@ body {
 
 /*Etoile Chef*/
 
+.chef2{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.savoir-plus button {
+  --c: #961111;
+  color: var(--c);
+  font-size: 16px;
+  border: solid var(--c);
+  border-radius: 0.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 3em;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.savoir-plus button span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: var(--c);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+
+.savoir-plus button:hover {
+  color: rgb(255, 255, 255);
+}
+
+.savoir-plus button:hover span {
+  transform: translateY(0) scale(2);
+}
+
+.savoir-plus button span:nth-child(1) {
+  --n: 1;
+}
+
+.savoir-plus button span:nth-child(2) {
+  --n: 2;
+}
+
+.savoir-plus button span:nth-child(3) {
+  --n: 3;
+}
+
+.savoir-plus button span:nth-child(4) {
+  --n: 4;
+}
+
 .etoile{
   text-align: center;
   margin-top: 5px;
@@ -168,6 +314,14 @@ h3{
   text-decoration: none;
   color: #961111;
 }
+
+.dropdown-menu{
+  border: solid 2px #961111;
+  padding: 5px;
+  text-align: center;
+}
+
+/*Footer*/
 
 /*Logo*/
 
@@ -199,7 +353,7 @@ h3{
   margin-top: 80px;
 }
 
-/*Footer*/
+
 #submit_button{
   float: right;
   padding: 10px;
@@ -216,4 +370,38 @@ h3{
   width: 100%;
   height: 600px;
   padding: 0;
+}
+
+.btn-envoyer{
+  float: right;
+  width: 150px;
+  border: solid white 1px;
+  background-color: transparent;
+  color: white;
+}
+
+
+/* PAGE MENU */
+
+#menu{
+  margin-top: 60px;
+  text-align: center;
+}
+
+.image-separe{
+  margin-top: 25px;
+}
+
+.image-separes{
+  width: 100%;
+  height: 150px;
+}
+
+.assiette{
+  margin-top: 30px;
+}
+
+.image-carousel{
+  width: 50px;
+  height: 70px;
 }

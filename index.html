@@ -10,17 +10,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <link rel="stylesheet" href="./style.css">
-    
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
     <title>MARMARA</title>
 </head>
 <body>
     
-    <header>
-        <nav>
+    <header >
+        <nav id="home">
             <div class="topnav" id="myTopnav">
-                <a href="#home" class="active">MARMARA</a>
-                <a class="proposes" href="#menu">Menu</a>
+                <a href="index.html" id="index" class="active">MARMARA</a>
+                <a class="proposes" href="menu.html">Menu</a>
                 <a href="#horaire">Horaire</a>
                 <a href="#chef">Chef</a>
                 <a href="#cont">Contact</a>
@@ -32,7 +34,7 @@
     </header>
     <section class="container-fluid">
         <div class="row fond-menu">
-            <div class="col-12 col-md-6">
+            <div class="baisser col-12 col-md-6">
                 <h1 class="decouvrir">DÉCOUVRIR</h1>
                 <h2>LE MENU !</h2>
                 <p>
@@ -44,7 +46,7 @@
                             Bas oui faut bien rendre ca jolie    
                 </p>
             </div>
-            <div class="col-md-6">
+            <div class="baisser col-md-6">
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <img class="image-menu1" src="./present-menu/doner-kebab-6583404_640.jpg" alt="">
@@ -66,10 +68,13 @@
                     </div>
                 </div>
             </div>
-            <div class="afficher">
-                <a class="afficher2" href="#">TOUT AFFICHER</a>
-            </div>
+            <button class="button">
+                <a class="afficher" href="menu.html">TOUT AFFICHER</a>
+                <div class="button__horizontal"></div>
+                <div class="button__vertical"></div>
+            </button>
         </div>
+        
     </section>
     <hr class="separe">
     <section class="container" >
@@ -89,14 +94,15 @@
             </div>
         </div>
     </section>
-    <section class="container ">
+    <section class="chef2 container ">
         <div class="row">
             <div class="col-12 col-md-4 etoile">
-                <img class="etoile" src="./image-chef/1er chef.png" alt="">
+                <img class="box" class="etoile" src="./image-chef/1er chef.png" alt="">
                 <h3>Chef</h3>
-                <div>
+                <div class="savoir-plus">
                     <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown button
+                        EN SAVOIR PLUS
+                        <span></span><span></span><span></span><span></span>
                     </button>
                     <p class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                         Je suis tous a fait d'accord <br> chef y tout a fait sympa gentil et chef d'accueuil
@@ -104,11 +110,12 @@
                 </div>
             </div>
             <div class="col-12 col-md-4 etoile" id="chef">
-                <img class="etoile" src="./image-chef/2eme chef.png" alt="">
-                <h3>Chef</h3>
-                <div>
+                <img  src="./image-chef/2eme chef.png" alt="">
+                <h3 >Chef</h3>
+                <div class="savoir-plus">
                     <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown button
+                        EN SAVOIR PLUS
+                        <span></span><span></span><span></span><span></span>
                     </button>
                     <p class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                         Je suis tous a fait d'accord <br> chef y tout a fait sympa gentil et chef d'accueuil
@@ -116,11 +123,12 @@
                 </div>
             </div>
             <div class="col-12 col-md-4 etoile">
-                <img class="etoile" src=".//image-chef/3eme chef.png" alt="">
+                <img class="box" src=".//image-chef/3eme chef.png" alt="">
                 <h3>Chef</h3>
-                <div >
+                <div class="savoir-plus">
                     <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown button
+                        EN SAVOIR PLUS
+                        <span></span><span></span><span></span><span></span>
                     </button>
                     <p class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                         Je suis tous a fait d'accord <br> chef y tout a fait sympa gentil et chef d'accueuil
@@ -129,8 +137,8 @@
             </div>
         </div>
     </section>
-    <hr class="separe">
     <footer>
+        <section class="piou">
         <div class="row">
             <div class="col-12 col-md-6 foote">
                 <div class="double-foot">
@@ -176,11 +184,13 @@
                     <textarea id="message" class="input" name="message" rows="7"  cols="30"></textarea><br />
                     <span id="message_validation" class="error_message"></span>
                     </div>
-                    <input id="submit_button" type="submit" value="Envoyer" />
-                    
+                    <button class="btn-envoyer" id="submit_button" type="submit" value="Envoyer"> Envoyer</button>
+
                 </form>
+              
             </div >
         </div>
+    </section>
     </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>  
 <script src="./app.js"></script>
