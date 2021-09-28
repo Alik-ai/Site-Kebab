@@ -5,6 +5,7 @@ body {
 }
 
 /*Bar Navigation*/
+
 #home{
   z-index: 9999;
   position: fixed;
@@ -17,7 +18,6 @@ body {
 }
 
 .topnav {
-  overflow: hidden;
   background-color: #961111;
 }
 
@@ -176,7 +176,7 @@ body {
   width: 60%;
   margin: auto;
   margin-top: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
 }
 
 /*Horaire et Adresse*/
@@ -383,13 +383,38 @@ h3{
 
 /* PAGE MENU */
 
+/*Bar-Nav*/
+
+.bar-nav{
+  text-align: center;
+  background-color: #961111;
+  height: 60px;
+}
+
+.marmara{
+  color: white;
+  text-decoration: none;
+}
+
+.marmara:hover{
+  color: white;
+}
+
+
 #menu{
   margin-top: 60px;
   text-align: center;
 }
 
+.assiette{
+  margin-top: 45px;
+  margin-bottom: 60px;
+}
+
+/*L'image qui separe les menus*/
+
 .image-separe{
-  margin-top: 25px;
+  margin-top: 40px;
 }
 
 .image-separes{
@@ -397,11 +422,12 @@ h3{
   height: 150px;
 }
 
-.assiette{
-  margin-top: 30px;
+.divers{
+  margin-bottom: 80px;
 }
 
-.image-carousel{
-  width: 50px;
-  height: 70px;
+#carouselExampleControls{
+  background-color: #961111;
+  padding: 30px;
+  color: white;
 }

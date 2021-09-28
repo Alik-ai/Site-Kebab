@@ -16,119 +16,225 @@
 </head>
 <body>
     <header>
-        <nav id="home">
-            <div class="topnav" id="myTopnav">
-                <a href="index.html" id="index" class="active">MARMARA</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                  <i class="fa fa-bars"></i>
-                </a>
-            </div>
+        <nav>
+          <div class="bar-nav">
+            <a class="marmara" href="index.html"><h1> Marmara</h1></a>
+          </div>
         </nav>
     </header>
     <div cl>
         <h1 id="menu">LE MENU</h1>
         <hr class="separe">
     </div>
+    <section class="container assiette">
     <h2>Avec du Pain...</h2>
-    <section class="container carrousel">
-        <div class="fond-rouge">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
             <div class="row">
-                <div class="row menu-kebab">
-                    <div class="col-12 col-md-6">
-                        <h4>KEBAB</h4>
-                        Viande possible : <p> Kebab, Steak, Merguez, Saussice, Nuggets...</P>
-                        <p>Ingrédients possible : <br> Salade, Tomate, Oignons...</p>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <img class="image-carousel" src="./image-menu/brochette de dinde.jfif" alt="">
-                    </div>
+                <div class="col-12 col-md-6">
+                  <h4>KEBAB</h4>
+                  Viande possible : <p> Kebab, Steak, Merguez, Saussice, Nuggets...</P>
+                  <p>Ingrédients possible : <br> Salade, Tomate, Oignons...</p>
+                  <p>Prix : 5 euro <br> Prix menu : 7°50 euro</p>
                 </div>
-                <div class="row menu-kebab">
-                    <div class="col-12 col-md-6">
-                        <h4>KEBAB</h4>
-                        Viande possible : <p> Kebab, Steak, Merguez, Saussice, Nuggets...</P>
-                        <p>Ingrédients possible : <br> Salade, Tomate, Oignons...</p>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <img class="image-carousel" src="./image-menu/brochette de dinde.jfif" alt="">
-                    </div>
-                </div>
-                <div class="row menu-kebab">
-                    <div class="col-12 col-md-6">
-                        <h4>KEBAB</h4>
-                        Viande possible : <p> Kebab, Steak, Merguez, Saussice, Nuggets...</P>
-                        <p>Ingrédients possible : <br> Salade, Tomate, Oignons...</p>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <img class="image-carousel" src="./image-menu/brochette de dinde.jfif" alt="">
-                    </div>
-                </div>
-                <div class="row menu-kebab">
-                    <div class="col-12 col-md-6">
-                        <h4>KEBAB</h4>
-                        Viande possible : <p> Kebab, Steak, Merguez, Saussice, Nuggets...</P>
-                        <p>Ingrédients possible : <br> Salade, Tomate, Oignons...</p>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <img src="./image-menu/brochette de dinde.jfif" alt="">
-                    </div>
-                </div>
-                <div class="row menu-kebab">
-                    <div class="col-12 col-md-6">
-                        <h4>KEBAB</h4>
-                        Viande possible : <p> Kebab, Steak, Merguez, Saussice, Nuggets...</P>
-                        <p>Ingrédients possible : <br> Salade, Tomate, Oignons...</p>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <img src="./image-menu/brochette de dinde.jfif" alt="">
-                    </div>
+                <div class="col-12 col-md-6">
+                  <img src="./image-menu/kebab.jfif" alt="">
                 </div>
             </div>
         </div>
+        <div class="carousel-item">
+          <div class="row">
+              <div class="col-12 col-md-6">
+                <h4>MICHE KEBAB</h4>
+                Viande possible : <p> Kebab, Steak, Merguez, Saussice, Nuggets...</P>
+                <p>Ingrédients possible : <br> Salade, Tomate, Oignons...</p>
+                <p>Prix : 5 euro <br> Prix menu : 7°50 euro</p>
+              </div>
+              <div class="col-12 col-md-6">
+                <img src="./image-menu/miche kebab.jfif" alt="">
+              </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+              <div class="col-12 col-md-6">
+                <h4>KEBAB</h4>
+                  Viande possible : <p> Kebab, Steak, Merguez, Saussice, Nuggets...</P>
+                  <p>Ingrédients possible : <br> Salade, Tomate, Oignons...</p>
+                  <p>Prix : 5 euro <br> Prix menu : 7°50 euro</p>
+              </div>
+              <div class="col-12 col-md-6">
+                <img src="./image-menu/images (1).jfif" alt="">
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
     </section>
     <div class="image-separe">
         <img class="image-separes" src="./image-menu/image-separe.png" alt="">
     </div>
+    
     <section class="container assiette">
         <h2>A L'ASSIETTE...</h2>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="./image-menu/brochette de dinde.jfif" class="d-block w-100" alt="...">
+                  <div class="row">
+                      <div class="col-12 col-md-6">
+                        <h4>ASSIETTE MAISON</h4>
+                  Viande possible : <p> Kebab, Steak, Merguez, Saussice, Nuggets...</P>
+                  <p>Ingrédients possible : <br> Salade, Tomate, Oignons...</p>
+                  <p>Prix : 5 euro <br> Prix menu : 7°50 euro</p>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <img src="./image-menu/assiette/assiete-maison.jfif" alt="">
+                      </div>
+                  </div>
               </div>
               <div class="carousel-item">
-                <img src="./image-menu/kebab.jfif" class="d-block w-100" alt="...">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                      <h4>ASSIETTE KEBAB</h4>
+                      Viande possible : <p> Kebab, Steak, Merguez, Saussice, Nuggets...</P>
+                      <p>Ingrédients possible : <br> Salade, Tomate, Oignons...</p>
+                      <p>Prix : 5 euro <br> Prix menu : 7°50 euro</p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <img src="./image-menu/assiette/assiete-kebab.jfif" alt="">
+                    </div>
+                </div>
               </div>
               <div class="carousel-item">
-                <img src="./image-menu/tacos.jfif" class="d-block w-100" alt="...">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                      <h4>ASSIETTE ESCALOPE</h4>
+                      Viande possible : <p> Kebab, Steak, Merguez, Saussice, Nuggets...</P>
+                      <p>Ingrédients possible : <br> Salade, Tomate, Oignons...</p>
+                      <p>Prix : 5 euro <br> Prix menu : 7°50 euro</p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <img src="./image-menu/assiette/assiette-escalope.jfif" alt="">
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                      <h4>ASSIETTE ISKENDER</h4>
+                      Viande possible : <p> Kebab, Steak, Merguez, Saussice, Nuggets...</P>
+                      <p>Ingrédients possible : <br> Salade, Tomate, Oignons...</p>
+                      <p>Prix : 5 euro <br> Prix menu : 7°50 euro</p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <img src="./image-menu/assiette/assiette-iskender.jfif" alt="">
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                      <h4>ASSIETTE KOFTE</h4>
+                      Viande possible : <p> Kebab, Steak, Merguez, Saussice, Nuggets...</P>
+                      <p>Ingrédients possible : <br> Salade, Tomate, Oignons...</p>
+                      <p>Prix : 5 euro <br> Prix menu : 7°50 euro</p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <img src="./image-menu/assiette/kofte.jfif" alt="">
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                      <h4>ASSIETTE STEAK</h4>
+                      Viande possible : <p> Kebab, Steak, Merguez, Saussice, Nuggets...</P>
+                      <p>Ingrédients possible : <br> Salade, Tomate, Oignons...</p>
+                      <p>Prix : 5 euro <br> Prix menu : 7°50 euro</p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <img src="./image-menu/assiette/steak.jfif" alt="">
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                      <h4>ADANA</h4>
+                      Viande possible : <p> Kebab, Steak, Merguez, Saussice, Nuggets...</P>
+                      <p>Ingrédients possible : <br> Salade, Tomate, Oignons...</p>
+                      <p>Prix : 5 euro <br> Prix menu : 7°50 euro</p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <img src="./image-menu/assiette/adana.jfif" alt="">
+                    </div>
+                </div>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+          </div>
+    </section>
+    <section class="container divers">
+        <h2>DIVERS...</h2>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <div class="row">
+                      <div class="col-12 col-md-6">
+                        <h4>SALADE RUSSE</h4>
+                  Viande possible : <p> Kebab, Steak, Merguez, Saussice, Nuggets...</P>
+                  <p>Ingrédients possible : <br> Salade, Tomate, Oignons...</p>
+                  <p>Prix : 5 euro <br> Prix menu : 7°50 euro</p>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <img src="./image-menu/salade-russe.jfif" alt="">
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                      <h4>TACOS</h4>
+                  Viande possible : <p> Kebab, Steak, Merguez, Saussice, Nuggets...</P>
+                  <p>Ingrédients possible : <br> Salade, Tomate, Oignons...</p>
+                  <p>Prix : 5 euro <br> Prix menu : 7°50 euro</p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <img src="./image-menu/tacos.jfif" alt="">
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                      <h4>FEUILLE DE VIGNE</h4>
+                  Viande possible : <p> Kebab, Steak, Merguez, Saussice, Nuggets...</P>
+                  <p>Ingrédients possible : <br> Salade, Tomate, Oignons...</p>
+                  <p>Prix : 5 euro <br> Prix menu : 7°50 euro</p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <img src="./image-menu/feuille-de-vigne.jfif" alt="">
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                      <h4>GALETTE</h4>
+                      Viande possible : <p> Kebab, Steak, Merguez, Saussice, Nuggets...</P>
+                      <p>Ingrédients possible : <br> Salade, Tomate, Oignons...</p>
+                      <p>Prix : 5 euro <br> Prix menu : 7°50 euro</p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <img src="./image-menu/galette.jfif" alt="">
+                    </div>
+                </div>
+              </div>
+            </div>
           </div>
     </section>
 
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 
     <footer>
         <div class="row">
